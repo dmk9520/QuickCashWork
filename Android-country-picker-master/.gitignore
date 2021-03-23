@@ -1,0 +1,11 @@
+.gradle
+/local.properties
+.DS_Store
+/build
+mobile/mobile.iml
+wear/wear.iml
+android.iml
+country-picker.iml
+hs_err_pid*
+Android-country-picker.iml
+/.idea

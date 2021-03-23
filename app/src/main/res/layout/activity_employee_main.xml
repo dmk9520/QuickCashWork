@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Employee.EmployeeMainActivity">
+
+    <com.example.findmyschool.view.CustomViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar" />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        app:backgroundColor="@color/ColorPrimary"
+        app:iconTint="@color/sub_txt_gray"
+        app:iconTintActive="@color/ColorPrimary"
+        app:indicatorColor="@color/ColorPrimaryLight"
+        app:indicatorRadius="@dimen/_8sdp"
+        app:menu="@menu/item_bottom"
+        app:textColor="@color/ColorPrimary" />
+</RelativeLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "227657146555",
+    "firebase_url": "https://find-my-job-3c9ea-default-rtdb.firebaseio.com",
+    "project_id": "find-my-job-3c9ea",
+    "storage_bucket": "find-my-job-3c9ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227657146555:android:2faeeba27e12c5ab5f899e",
+        "android_client_info": {
+          "package_name": "com.example.findmyschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227657146555-cmdjab7gua9j7138s0ilemfv3dd1ej6p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findmyschool",
+            "certificate_hash": "9f46c271a958e8db1c4a87c45b80575161065c5a"
+          }
+        },
+        {
+          "client_id": "227657146555-vmlpbvm6ruihn4dnfmu8k3h0uuneaot6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findmyschool",
+            "certificate_hash": "d964e0247823e6a273924cd2840721c195130ba9"
+          }
+        },
+        {
+          "client_id": "227657146555-cd3i3vo3iv4ok0igjets7cfv2cgulkd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNnbj_Vq6VFZ9GZsEOamu4617DQLInH9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227657146555-cd3i3vo3iv4ok0igjets7cfv2cgulkd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

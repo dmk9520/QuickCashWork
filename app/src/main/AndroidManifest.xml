@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.findmyschool">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Utils.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FindMySchool"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.Employee.Recruiter_Show_Activity"></activity>
+        <activity android:name=".Activity.Employee.Employee_Apply_Activity" />
+        <activity android:name=".Activity.Recruiter.Recruiter_Resume_Activity" />
+        <activity android:name=".Activity.Recruiter.Resume_Show_Activity" />
+        <activity android:name=".Activity.Recruiter.Recruiter_Review_Activity" />
+        <activity android:name=".Activity.Recruiter.Edit_Recruiter_Activity" />
+        <activity android:name=".Activity.Recruiter.RecruiterDetailActivity" />
+        <activity android:name=".Activity.Recruiter.RecruiterJobPostActivity" />
+        <activity android:name=".Activity.Employee.Edit_Profile_Activity" />
+        <activity android:name=".Activity.Employee.EmployeeInterestActivity" />
+        <activity android:name=".Activity.Employee.EmployeeEducationMainActivity" />
+        <activity android:name=".Activity.Recruiter.Employee_Show_Profile" />
+        <activity android:name=".Activity.Recruiter.Recruiter_Setting_Activity" />
+        <activity android:name=".Activity.Recruiter.Recruiter_Profile_Activity" />
+        <activity android:name=".Activity.Recruiter.Employees_Show_Activity" />
+        <activity android:name=".Activity.Location_Get_Activity" />
+        <activity android:name=".Activity.Employee.EmployeeExperienceActivity" />
+        <activity android:name=".Activity.Employee.EmployeeCertificateActivity" />
+        <activity android:name=".Activity.Employee.EmployeeEducationActivity" />
+        <activity android:name=".Activity.Employee.Employee_Review_Activity" />
+        <activity android:name=".Activity.Employee.Employee_Setting_Activity" />
+        <activity android:name=".Activity.Employee.Job_Filter_Activity" />
+        <activity android:name=".Activity.Employee.Employee_Resume_Activity" />
+        <activity android:name=".Activity.Employee.Employee_profile_Activity" />
+        <activity android:name=".Activity.Employee.Employee_Job_Activity" />
+        <activity android:name=".Activity.Employee.EmployeeDetailActivity" />
+        <activity android:name=".Activity.Employee.EmployeeMainActivity" />
+        <activity android:name=".Activity.Recruiter.RecruiterLocationPermissionActivity" />
+        <activity android:name=".Activity.Recruiter.RecruiterMainActivity" />
+        <activity android:name=".Activity.Employee.EmployeeLoginActivity" />
+        <activity android:name=".Activity.Recruiter.RecruiterLoginActivity" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:theme="@style/AppThemeMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+    </application>
+
+</manifest>
